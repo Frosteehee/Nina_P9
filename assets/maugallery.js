@@ -1,4 +1,4 @@
-/*(function($) {
+(function($) {
   $.fn.mauGallery = function(options) {
     var options = $.extend($.fn.mauGallery.defaults, options);
     var tagsCollection = [];
@@ -261,9 +261,10 @@
     }
   };
 })(jQuery);
-*/
+
 
 /////////////////////////////////// Test modification avec CHATGPT 05/03/2024
+/*
 (function ($) {
   $.fn.mauGallery = function (options) {
       var settings = $.extend({}, $.fn.mauGallery.defaults, options);
@@ -459,7 +460,7 @@
       });
   }
 })(jQuery);
-
+*/
 /*
 Déclarations de variables :
 
