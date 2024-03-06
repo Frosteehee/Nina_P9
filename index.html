@@ -1,24 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<html lang="en">
-	<meta name="description" content="Photographe professionnelle, Nina Carducci vous propose ses services pour vos événements, portraits, concerts et entreprises.">
+	<meta charset="UTF-8">
+	<meta name="language" content="fr">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<meta name="author" content="Nina Carducci" >
+	<meta name="copyright" content="© Nina Carducci" >
+	<meta name="keywords" content="photographe, Bordeaux, portraits, mariages, événements">
+	<meta name="description" content="Nina Carducci, photographe expérimentée à Bordeaux, spécialisée en portraits, mariages, événements. Explorez une galerie inspirante et diverse.">
+	<!-- FB Open Graph -->
+	<meta property="og:title" content="Nina Carducci - Photographe à Bordeaux" />
+	<meta property="og:description" content="Nina Carducci, photographe expérimentée à Bordeaux, spécialisée en portraits, mariages, événements. Explorez une galerie inspirante et diverse." />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://ninacarducci.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Nina Carducci Photography" />
+	<!-- X (Twitter) Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Nina Carducci - Photographe à Bordeaux" />
+	<meta name="twitter:description" content="Nina Carducci, photographe expérimentée à Bordeaux, spécialisée en portraits, mariages, événements. Explorez une galerie inspirante et diverse." />
+	<meta name="twitter:image" content="" />
+	<title>Nina Carducci - Photographe</title>
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
-	<title>Nina Carducci</title>
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,300;0,800;1,300&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Person",
+		  "name": "Nina Carducci",
+		  "url": "https://ninacarducci.github.io/",
+		  "sameAs": [
+			"https://www.instagram.com/ninacarducci.photo"
+		  ],
+		  "jobTitle": "Photographe professionnelle",
+		  "gender": "Female",
+		  "email": "contact@nina-carducci-photographie.fr",
+		  "image": "./assets/images/nina.webp",
+		  "worksFor": {
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci Photography Studio",
+			"priceRange": "50€ - 400€",
+			"address": {
+			  "@type": "PostalAddress",
+			  "streetAddress": "68 avenue Alsace-Lorraine",
+			  "addressLocality": "Bordeaux",
+			  "addressRegion": "Nouvelle-Aquitaine",
+			  "postalCode": "33200",
+			  "addressCountry": "FR"
+			},
+			"telephone": "+33556677889",
+			"openingHoursSpecification": [
+			  {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "https://schema.org/Monday",
+				"opens": "10:00",
+				"closes": "19:00"
+			  },
+			  {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "https://schema.org/Tuesday",
+				"opens": "10:00",
+				"closes": "19:00"
+			  },
+			  {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "https://schema.org/Wednesday",
+				"opens": "10:00",
+				"closes": "19:00"
+			  },
+			  {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "https://schema.org/Thursday",
+				"opens": "10:00",
+				"closes": "19:00"
+			  },
+			  {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "https://schema.org/Friday",
+				"opens": "10:00",
+				"closes": "19:00"
+			  }
+			],
+			"geo": {
+			  "@type": "GeoCoordinates",
+			  "latitude": "44.837789",
+			  "longitude": "-0.57918"
+			},
+			"image": "./assets/images/camera.webp",
+			"description": "Studio de photographie professionnel offrant des services de photographie de portrait, d'événements et commerciale à Bordeaux."
+		  }
+		}
+		</script>
 </head>
 <body>
 <header class="top-header">
-	<h3 class="name">Nina Carducci</h3>
+	<h1 class="name">Nina Carducci</h1>
 	<nav class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
@@ -64,8 +144,8 @@
 		<img src="assets/images/nina.webp" alt="Nina Portrait">
 	</div>
 	<article id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<h4 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h4> <!--changer la taille de police-->
+		<h2 class="about-me__title">A propos de moi</h2>
+		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p> <!--changer la taille de police-->
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</article>
@@ -87,8 +167,7 @@
 	</div>
 	<article class="quote">
 		<figure>
-			<blockquote>
-				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+			<blockquote class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
@@ -132,15 +211,14 @@
 </section>
 <article class="quote">
 	<figure>
-		<blockquote>
-			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+		<blockquote class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </article>
 <section id="contact">
 	<div class="container">
-		<div class="form-container">
+		<article class="form-container">
 			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
@@ -153,7 +231,7 @@
 				<input type="submit" value="Envoyer"/>
 			</form>
 			
-		</div>
+		</article>
 		<div class="picture right">
 			<img src="assets/images/camera.webp" alt="Appareil Photo">
 		</div>
@@ -162,6 +240,10 @@
 </main>
 <footer>
 </footer>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.js"></script>
+	<script src="./assets/scripts.js"></script>
 </body> 
 </html>
 <!--Changements en cours sur le html:
@@ -188,4 +270,10 @@ Performance à 79%
 Accessibility à 89% 		
 BP à 100%
 SEO à 100%
+
+Ajout balise script apllication/ld+json pour le référencement
+Ajout Balise meta ( remplir les sources des images pour FB et X)
+Inversion Script pour téléchargement de la page plus fluide 
+Redimensionnement (encore )des images pour le temps de chargement
+min du bootstrap
 -->
