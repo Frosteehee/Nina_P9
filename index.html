@@ -21,11 +21,11 @@
 	<meta name="twitter:description" content="Nina Carducci, photographe expérimentée à Bordeaux, spécialisée en portraits, mariages, événements. Explorez une galerie inspirante et diverse." />
 	<meta name="twitter:image" content="" />
 	<title>Nina Carducci - Photographe</title>
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" defer>
 	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com" defer>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,300;0,800;1,300&display=swap"  rel="stylesheet" defer >
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,300;0,800;1,300&display=swap" rel="stylesheet"  defer >
 	<link rel="icon" type="image/png" href="favicon.png">
 	<script type="application/ld+json">
 		{
@@ -105,7 +105,7 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Logo Instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" width="20px" height="20px"   alt="Logo Instagram"></a></li>
 		</ul>
 	</nav>
 </header>
@@ -154,15 +154,68 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="assets/images/gallery/concerts/aaron-paul.webp" alt="Photographie d'une scene de concert depuis le public"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="assets/images/gallery/entreprise/ali-morshedlou.webp" alt="Homme en costume"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="assets/images/gallery/entreprise/jason-goodman.webp" alt="Femme souriante assise"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="assets/images/gallery/mariage/hannah-busing.webp" alt="Mains tendues"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="assets/images/gallery/portraits/ade-tunji.webp" alt="Portrait homme ensoleillé"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="assets/images/gallery/mariage/jakob-owens.webp" alt="Mariés heureux devant un palmier"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="assets/images/gallery/portraits/nino-van-prattenburg.webp" alt="Femme à lunettes au travers d'un grillage"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="assets/images/gallery/concerts/austin-neill.webp" alt="Chanteur pendant un concert"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="assets/images/gallery/entreprise/mateus-campos-felipe.webp" alt="Femme souriante devant son ordinateur portable"/>
+			<img 
+			loading="lazy"
+			data-gallery-tag="Concert" 
+			class="gallery-item"
+			src="assets/images/gallery/concerts/aaron-paul.webp"
+			alt="Photographie d'une scene de concert depuis le public"/>
+
+			<img 
+			loading="lazy"
+			data-gallery-tag="Entreprises" 
+			class="gallery-item" 
+			src="assets/images/gallery/entreprise/ali-morshedlou.webp"
+			 alt="Homme en costume"/>
+
+			<img
+			loading="lazy"
+			 data-gallery-tag="Entreprises" 
+			 class="gallery-item"
+			  src="assets/images/gallery/entreprise/jason-goodman.webp"
+			   alt="Femme souriante assise"/>
+
+			<img 
+			loading="lazy"
+			data-gallery-tag="Mariages" 
+			class="gallery-item" 
+			src="assets/images/gallery/mariage/hannah-busing.webp" 
+			alt="Mains tendues"/>
+
+			<img
+			loading="lazy"
+			data-gallery-tag="Portrait" 
+			class="gallery-item"
+			src="assets/images/gallery/portraits/ade-tunji.webp" 
+			alt="Portrait homme ensoleillé"/>
+
+			<img
+			loading="lazy"
+			 data-gallery-tag="Mariages"
+			  class="gallery-item"
+			   src="assets/images/gallery/mariage/jakob-owens.webp"
+			    alt="Mariés heureux devant un palmier"/>
+
+			<img 
+			loading="lazy"
+			data-gallery-tag="Portrait"
+			 class="gallery-item"
+			  src="assets/images/gallery/portraits/nino-van-prattenburg.webp" 
+			  alt="Femme à lunettes au travers d'un grillage"/>
+
+			<img 
+			loading="lazy"
+			data-gallery-tag="Concert"
+			class="gallery-item" 
+			src="assets/images/gallery/concerts/austin-neill.webp" 
+			alt="Chanteur pendant un concert"/>
+
+			<img
+			loading="lazy"
+			 data-gallery-tag="Entreprises" 
+			 class="gallery-item"
+			  src="assets/images/gallery/entreprise/mateus-campos-felipe.webp"
+			   alt="Femme souriante devant son ordinateur portable"/>
 		</div>
 	</div>
 	<article class="quote">
@@ -233,7 +286,7 @@
 			
 		</article>
 		<div class="picture right">
-			<img src="assets/images/camera.webp" alt="Appareil Photo">
+			<img  loading="lazy" src="assets/images/camera.webp" alt="Appareil Photo">
 		</div>
 	</div>
 </section>
@@ -281,6 +334,7 @@ min du bootstrap
 le 06/03/2024
 
 Ajout de Defer pour les polices 
-
+A faire : Ajouter une taille pour les img Width et Height
+Retravailler les img car perte de qualité en compressant
 
 -->
