@@ -60,37 +60,20 @@
 			},
 			"telephone": "+33556677889",
 			"openingHoursSpecification": [
-			  {
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "https://schema.org/Monday",
-				"opens": "10:00",
-				"closes": "19:00"
-			  },
-			  {
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "https://schema.org/Tuesday",
-				"opens": "10:00",
-				"closes": "19:00"
-			  },
-			  {
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "https://schema.org/Wednesday",
-				"opens": "10:00",
-				"closes": "19:00"
-			  },
-			  {
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "https://schema.org/Thursday",
-				"opens": "10:00",
-				"closes": "19:00"
-			  },
-			  {
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "https://schema.org/Friday",
-				"opens": "10:00",
-				"closes": "19:00"
-			  }
-			],
+			{
+			  "@type": "OpeningHoursSpecification",
+			  "dayOfWeek": [
+				"https://schema.org/Monday",
+				"https://schema.org/Tuesday",
+				"https://schema.org/Wednesday",
+				"https://schema.org/Thursday",
+				"https://schema.org/Friday"
+			  ],
+			  "opens": "10:00",
+			  "closes": "19:00"
+			}
+		  ]
+		  
 			"geo": {
 			  "@type": "GeoCoordinates",
 			  "latitude": "44.837789",
@@ -116,7 +99,7 @@
 	</nav>
 </header>
 <main>
-<section id="header">
+<div id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -129,8 +112,7 @@
 					<picture>
 					  <source
 						srcset="assets/images/slider/ryoji-iwata-mobile.webp"
-						media="(max-width: 768px)"
-					>
+						media="(max-width: 768px)">
 					  <img
 						src="./assets/images/slider/ryoji-iwata.webp"
 						class="d-block w-100"
@@ -170,8 +152,8 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-</section>
-<section id="about">
+</div>
+<div id="about">
 	<div class="picture left">
 		<img src="assets/images/nina.webp" alt="Nina Portrait">
 	</div>
@@ -181,7 +163,7 @@
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</article>
-</section>
+</div>
 <section id="gallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
@@ -250,13 +232,13 @@
 			alt="Femme souriante devant son ordinateur portable">
 		</div>
 	</div>
-	<article class="quote">
+	<aside class="quote">
 		<figure>
 			<blockquote class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
-	</article>
+	</aside>
 </section>
 <section id="services">
 	<h2 class="title">Mes services</h2>
@@ -294,13 +276,13 @@
 		</div>
 	</div>
 </section>
-<article class="quote">
+<aside class="quote">
 	<figure>
 		<blockquote class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
-</article>
+</aside>
 
 </main>
 <footer id="contact">
