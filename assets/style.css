@@ -299,7 +299,7 @@ input[type="submit"] {
         right: 0;
     }
 }
-@media all and (max-width: 650px) {
+@media all and (max-width: 768px) {
     .top-header {
         flex-direction: column;
         padding-inline: 0;
@@ -334,5 +334,9 @@ input[type="submit"] {
     }
     .picture {
         width: 80%;
+    }
+    .d-block .w-768 {
+        width: 768px;
+        height: auto;
     }
 }
