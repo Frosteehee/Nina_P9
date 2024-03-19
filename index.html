@@ -21,8 +21,9 @@
 	<meta name="twitter:description" content="Nina Carducci, photographe expérimentée à Bordeaux, spécialisée en portraits, mariages, événements. Explorez une galerie inspirante et diverse." >
 	<meta name="twitter:image" content="" >
 	<title>Nina Carducci - Photographe</title>
+
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" >  <!--Si il est en dessous de style.css cela dérange les img de la gallery-->
-	<link rel="stylesheet" href="./assets/style.css" defer>
+	<link rel="stylesheet" href="./assets/style.min.css" defer>
 
 
 
@@ -73,12 +74,7 @@
 			  "closes": "19:00"
 			}
 		  ]
-		  
-			"geo": {
-			  "@type": "GeoCoordinates",
-			  "latitude": "44.837789",
-			  "longitude": "-0.57918"
-			},
+		
 			"image": "./assets/images/camera.webp",
 			"description": "Studio de photographie professionnel offrant des services de photographie de portrait, d'événements et commerciale à Bordeaux."
 		  }
@@ -111,11 +107,11 @@
 			<div class="carousel-item active">
 					<picture>
 					  <source
-						srcset="assets/images/slider/ryoji-iwata-mobile.webp"
+						srcset="assets/images/slider/ryoji-iwata-mobile.webp" class="d-block w-768"
 						media="(max-width: 768px)">
 					  <img
 						src="./assets/images/slider/ryoji-iwata.webp"
-						class="d-block w-100"
+						class="d-block w-100" width="100%" height="auto"
 						alt="Homme en costume qui traverse un passage piéton">
 					</picture>
 				  </div>
@@ -312,8 +308,8 @@
 </footer>
 <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script src="./assets/maugallery.min.js"></script>
+	<script src="./assets/scripts.min.js"></script>
 </body> 
 </html>
 <!--Changements en cours sur le html:
