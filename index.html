@@ -25,7 +25,7 @@
 	<title>Nina Carducci - Photographe</title>
 
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" >  <!--Si il est en dessous de style.css cela dérange les img de la gallery-->
-	<link rel="stylesheet" href="./assets/style.css" defer>
+	<link rel="stylesheet" href="./assets/style.css">
 
 
 
@@ -97,7 +97,7 @@
 	</nav>
 </header>
 <main>
-<div id="carousel" aria-label="Carousel">
+<div id="carousel">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" aria-roledescription="carousel">
 		<div class="carousel-indicators">
@@ -106,45 +106,39 @@
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 		</div>
 		<div class="carousel-inner">
-				<div class="carousel-item active" >
-						<picture>
-						<source
-							srcset="assets/images/slider/ryoji-iwata-mobile.webp 768w" 
-							media="(max-width: 768px)">
-						<img
-							src="./assets/images/slider/ryoji-iwata.webp"
-							class="d-block w-100" 
-							alt="Homme en costume qui traverse un passage piéton">
-						</picture>
-					</div>
-
-			<div class="carousel-item">
+			<div class="carousel-item active">
 				<picture>
-					<source
-					  srcset="assets/images/slider/nicholas-green-mobile.webp"
-					  media="(max-width: 768px)">
-
-				<img 
-				loading="lazy"
-				src="assets/images/slider/nicholas-green.webp" 
-				class="d-block w-100" 
-				alt="Foule de concert">
+					<source srcset="assets/images/slider/ryoji-iwata-mobile.webp" media="(max-width: 768px)">
+					<source srcset="assets/images/slider/ryoji-iwata.webp" media="(min-width: 769px)">
+					<img src="./assets/images/slider/ryoji-iwata.webp"
+						 class="d-block w-100"
+						 alt="Homme en costume qui traverse un passage piéton">
 				</picture>
 			</div>
-
+		
 			<div class="carousel-item">
 				<picture>
-					<source
-					  srcset="assets/images/slider/edward-cisneros-mobile.webp"
-					  media="(max-width: 768px)">
-				<img 
-				loading="lazy"
-				src="assets/images/slider/edward-cisneros.webp"
-				 class="d-block w-100" 
-				 alt="Mariés s'embrassant">
+					<source srcset="assets/images/slider/nicholas-green-mobile.webp" media="(max-width: 768px)">
+					<source srcset="assets/images/slider/nicholas-green.webp" media="(min-width: 769px)">
+					<img loading="lazy"
+						 src="assets/images/slider/nicholas-green.webp"
+						 class="d-block w-100"
+						 alt="Foule de concert">
+				</picture>
+			</div>
+		
+			<div class="carousel-item">
+				<picture>
+					<source srcset="assets/images/slider/edward-cisneros-mobile.webp" media="(max-width: 768px)">
+					<source srcset="assets/images/slider/edward-cisneros.webp" media="(min-width: 769px)">
+					<img loading="lazy"
+						 src="assets/images/slider/edward-cisneros.webp"
+						 class="d-block w-100"
+						 alt="Mariés s'embrassant">
 				</picture>
 			</div>
 		</div>
+		
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Image précédente">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
