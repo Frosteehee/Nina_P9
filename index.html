@@ -8,6 +8,8 @@
 	<meta name="copyright" content="© Nina Carducci" >
 	<meta name="keywords" content="photographe, Bordeaux, portraits, mariages, événements">
 	<meta name="description" content="Nina Carducci, photographe expérimentée à Bordeaux, spécialisée en portraits, mariages, événements. Explorez une galerie inspirante et diverse.">
+	<!-- Ajout de la balise meta robots -->
+	<meta name="robots" content="INDEX, FOLLOW">
 	<!-- FB Open Graph -->
 	<meta property="og:title" content="Nina Carducci - Photographe à Bordeaux">
 	<meta property="og:description" content="Nina Carducci, photographe expérimentée à Bordeaux, spécialisée en portraits, mariages, événements. Explorez une galerie inspirante et diverse.">
@@ -32,8 +34,6 @@
 	<!--<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,300;0,800;1,300&display=swap" rel="stylesheet" >-->
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,300;0,800;1,300&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <!--<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,300;0,800;1,300&display=swap"></noscript>-->
-
-	<link rel="icon" type="image/png" href="favicon.png">
 	<script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",
@@ -84,39 +84,39 @@
 		</script>
 </head>
 <body>
-<header class="top-header">
+<header class="top-header" >
 	<h1 class="name">Nina Carducci</h1>
-	<nav class="nav">   
+	<nav class="nav" aria-label="Menu de navigation">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" width="20" height="20"   alt="Logo Instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" aria-label="Profil Instagram de Nina Carducci"><img src="assets/images/instagram.webp" width="20" height="20"   alt="Logo Instagram"></a></li>
 		</ul>
 	</nav>
 </header>
 <main>
-<div id="header">
+<div id="carousel" aria-label="Carousel">
 
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" aria-roledescription="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 		</div>
 		<div class="carousel-inner">
-			<div class="carousel-item active">
-					<picture>
-					  <source
-						srcset="assets/images/slider/ryoji-iwata-mobile.webp" class="d-block w-768"
-						media="(max-width: 768px)">
-					  <img
-						src="./assets/images/slider/ryoji-iwata.webp"
-						class="d-block w-100" width="100%" height="auto"
-						alt="Homme en costume qui traverse un passage piéton">
-					</picture>
-				  </div>
+				<div class="carousel-item active" >
+						<picture>
+						<source
+							srcset="assets/images/slider/ryoji-iwata-mobile.webp 768w" 
+							media="(max-width: 768px)">
+						<img
+							src="./assets/images/slider/ryoji-iwata.webp"
+							class="d-block w-100" 
+							alt="Homme en costume qui traverse un passage piéton">
+						</picture>
+					</div>
 
 			<div class="carousel-item">
 				<picture>
@@ -145,11 +145,11 @@
 				</picture>
 			</div>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Image précédente">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label="Image suivante">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Next</span>
 		</button>
@@ -161,13 +161,13 @@
 	</div>
 	<article id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
-		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p> <!--changer la taille de police-->
+		<blockquote class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</blockquote> 
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</article>
 </div>
 <section id="gallery">
-	<h3 class="title">Portfolio</h3>
+	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
 			<img 
@@ -314,42 +314,3 @@
 	<script src="./assets/scripts.min.js"></script>
 </body> 
 </html>
-<!--Changements en cours sur le html:
-sémantique (Ajout de balises section, article, header, nav, footer)
-alt des images  (Ajout de texte alternatif pour les images)
-
-à réaliser:
-label pour les inputs (Ajout de label pour les inputs)
-ajout de balises meta (Ajout de balises meta pour le référencement)
-ajout de balises link (Ajout de balises link pour le référencement)
-Re size des images (Réduire la taille des images pour le temps de chargement)
-
-***********************************
-le 04/03/2024
-Performance à 52% 
-Accessibility à 84%
-Best Practices à 100%
-SEO à 92%
-
-
-************************************
-le 05/03/2024
-Performance à 79%
-Accessibility à 89% 		
-BP à 100%
-SEO à 100%
-
-Ajout balise script apllication/ld+json pour le référencement
-Ajout Balise meta ( remplir les sources des images pour FB et X)
-Inversion Script pour téléchargement de la page plus fluide 
-Redimensionnement (encore )des images pour le temps de chargement
-min du bootstrap
-
-**************************************
-le 06/03/2024
-
-Ajout de Defer pour les polices 
-A faire : Ajouter une taille pour les img Width et Height
-Retravailler les img car perte de qualité en compressant
-
--->
